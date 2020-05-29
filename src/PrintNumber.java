@@ -1,6 +1,6 @@
 public class PrintNumber {
     public static void main(String[] args) {
-        int x = 20;
+        int x = 53;
         int i;
         boolean num = false;
         for (i = 2; i < x; i++) {
