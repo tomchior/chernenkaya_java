@@ -10,6 +10,7 @@ public class ExperimentsTransliterator {
         //цепочки символов второго массива.
         Transliterator t = new Transliterator(rus, eng);
         Transliterator d = new Transliterator(nums, texts);
+        Transliterator h = Transliterator.createICAO_DOC_9303();
         //функция tranlateOneSymbol ищет в первом массиве данный ей символ,
         // и выводит цепочку символов из второго массива
         System.out.println(t.translateOneSymbol('я')); // ia
@@ -26,6 +27,9 @@ public class ExperimentsTransliterator {
         System.out.println(t.translate("Моё имя")); // Ilia
         System.out.println(t.translate("Яблоко")); // Iabloko
         System.out.println(t.translate("ПАРАШЮТ")); // PARAShIuT
+
+        System.out.println(h.translate("ПАРАШЮТ"));
+
 
     }
 }
