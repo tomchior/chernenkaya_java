@@ -17,6 +17,18 @@ public class Transliterator {
                                 s = eng[i];
                                 break;
                         }
+                        else {
+                                if (Character.isUpperCase(symbol) && Character.toLowerCase(symbol) == rus[i]) {
+                                        s = "";
+                                        if (eng[i].length() == 1) {
+                                                s += Character.toUpperCase(eng[i].charAt(0)) + "";
+                                                break;
+                                        } else if (eng[i].length() > 1) {
+                                                s += Character.toUpperCase(eng[i].charAt(0)) + "" + eng[i].charAt(1);
+                                                break;
+                                        }
+                                }
+                        }
                 }
                 return s;
         }

@@ -15,10 +15,17 @@ public class ExperimentsTransliterator {
         System.out.println(t.translateOneSymbol('я')); // ia
         // Если символа нет в массиве, то нужно вернуть то, что было раньше
         System.out.println(t.translateOneSymbol('$')); // $
-        System.out.println(d.translateOneSymbol('1'));
+        System.out.println(d.translate("1 4"));
         // Функция translate заменяет все символы строки
         System.out.println(t.translate("экзамен")); // ekzamen
         System.out.println(t.translate("моё имя")); // ilia
+
+        System.out.println(t.translateOneSymbol('Р')); // R
+        System.out.println(t.translateOneSymbol('Я')); // Ia
+        System.out.println(t.translateOneSymbol('Ь')); //
+        System.out.println(t.translate("Моё имя")); // Ilia
+        System.out.println(t.translate("Яблоко")); // Iabloko
+        System.out.println(t.translate("ПАРАШЮТ")); // PARAShIuT
 
     }
 }
